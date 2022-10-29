@@ -10,12 +10,13 @@ function getCoumputerChoice()
 
 function playRound() 
     {
-        playerSelection = prompt("Choose Rock, Paper, Scissors!");
-     
+       let playerInput = prompt("Choose Rock, Paper, Scissors!");
+       playerSelection = playerInput.toLowerCase();
+        
         if (playerSelection == 'rock' && computerSelection == 'paper') { 
             return "You Win! Rock beats Paper!"; 
          }
-            else if (playerSelection == 'rock' && computerSelection == 'scissors'){
+            else if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors'){
                 return "You Lose! Scissors beats Rock!";
          }
             else if (playerSelection == 'rock' && computerSelection == 'rock'){
